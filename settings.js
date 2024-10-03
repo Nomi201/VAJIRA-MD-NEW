@@ -5,10 +5,10 @@ function convertToBool(text, fault = 'true') {
 }
 
 module.exports = {
-SESSION_ID: process.env.SESSION_ID === 'VAJIRA-MD=aEUHQaRD#vjv_7xt5H-8RXhzt27AWYG4qMZxA3pv50vELR_hNWqc' : process.env.SESSION_ID,
-OWNER_NUMBER: process.env.OWNER_NUMBER === '923329824112' : process.env.OWNER_NUMBER,   
-ONLY_GROUP: process.env.ONLY_GROUP === 'false' : process.env.ONLY_GROUP,
-ONLY_ME: process.env.ONLY_ME === 'false' : process.env.ONLY_ME,
+SESSION_ID: process.env.SESSION_ID === undefined ? 'VAJIRA-MD=aEUHQaRD#vjv_7xt5H-8RXhzt27AWYG4qMZxA3pv50vELR_hNWqc' : process.env.SESSION_ID,
+OWNER_NUMBER: process.env.OWNER_NUMBER === undefined ? '' : process.env.OWNER_NUMBER,   
+ONLY_GROUP: process.env.ONLY_GROUP === undefined ? 'false' : process.env.ONLY_GROUP,
+ONLY_ME: process.env.ONLY_ME === undefined ? 'false' : process.env.ONLY_ME,
 AUTO_STATUS_READ:  process.env.AUTO_STATUS_READ  || false  ,    
 PREFIX: process.env.PREFIX || '.' ,
 FOOTER: process.env.FOOTER=== undefined ? '‌👨‍💻 ᴠᴀᴊɪʀᴀ ᴍᴅ ʙʏ ᴛᴄ ᴛᴇᴀᴍ 👨‍💻': process.env.FOOTER,
